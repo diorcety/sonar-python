@@ -94,3 +94,7 @@ def symbols_in_comp():
 def for_comp_with_no_name_var():
   # test for comp that are not names nor tuple
   [x for fun() in [1,2]]
+
+def scope_of_comprehension(x):
+  [x+1 for x in [1,2]]
+  foo(x)

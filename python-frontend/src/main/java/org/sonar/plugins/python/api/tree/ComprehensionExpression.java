@@ -19,10 +19,15 @@
  */
 package org.sonar.plugins.python.api.tree;
 
+import java.util.Set;
+import org.sonar.python.semantic.Symbol;
+
 public interface ComprehensionExpression extends Expression {
 
   Expression resultExpression();
 
   ComprehensionFor comprehensionFor();
+
+  Set<Symbol> localVariables();
 
 }
